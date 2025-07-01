@@ -162,7 +162,7 @@ Place `usdinr_d_2.csv` and `HistoricalData.csv` in the project directory.
 
 ---
 
-## License
+## License 
 .GNU license
 
 ---
@@ -189,7 +189,7 @@ Non-trainable params: 0
 
 ### Data Analysis Insights
 
-- **Price Distribution:** Roughly normal, with most prices between 72 and 76.
+- **Price Distribution:** Roughly normal, with most prices between 79 and 83.
 - **Trend:** General upward trend over time.
 - **Correlation:** Strong positive correlation among all price categories.
 
