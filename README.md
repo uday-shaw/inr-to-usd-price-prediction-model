@@ -163,8 +163,7 @@ Place `usdinr_d_2.csv` and `HistoricalData.csv` in the project directory.
 ---
 
 ## License
-
-Specify your license here (e.g., MIT, Apache, etc.).
+.GNU license
 
 ---
 
@@ -200,7 +199,7 @@ Non-trainable params: 0
 
 ### ARIMA Prediction Plot
 
-![ARIMA Prediction Plot](arima_tp.png)
+
 
 ### LSTM Prediction Plot
 
