@@ -104,3 +104,111 @@ Presentation slides summarizing the project, including:
    Ensure you have Python 3.x installed. It is recommended to use a virtual environment.
 2. **Dependencies:**  
    Install required libraries:
+3. **Data Files:**  
+Place `usdinr_d_2.csv` and `HistoricalData.csv` in the project directory.
+4. **Running the Models:**  
+- **ARIMA:** Run `algo_1_arima.py`.
+- **LSTM:** Open and run `project_file-1.ipynb` in Jupyter Notebook.
+
+---
+
+## Usage
+
+### ARIMA Model
+
+1. **Run the script:**
+2. **Output:**  
+- Prints the Mean Squared Error (MSE) of the predictions.
+- Saves a plot of actual vs. predicted values as `arima_tp.png`.
+
+### LSTM Model
+
+1. **Open the notebook:**
+2. **Run all cells:**  
+- Explores the dataset.
+- Trains the LSTM model.
+- Evaluates and visualizes predictions.
+
+---
+
+## Results and Evaluation
+
+### ARIMA Model
+
+- **Performance:**  
+- Mean Squared Error (MSE) is computed and printed.
+- Visual comparison of actual vs. predicted values is provided.
+- **Visualization:**  
+- Plot saved as `arima_tp.png`.
+
+### LSTM Model
+
+- **Performance:**  
+- Metrics such as MSE, MAE, and visual plots are provided.
+- The model captures trends and patterns in the data, showing strong predictive capabilities.
+- **Visualization:**  
+- Plots of actual vs. predicted prices and future price predictions are generated.
+- **Exploratory Analysis:**  
+- Histograms, trend plots, boxplots, and correlation heatmaps are included for insights.
+
+---
+
+## Future Work
+
+- **Hybrid Models:** Explore hybrid models (e.g., CNN-LSTM) for improved accuracy.
+- **Additional Features:** Incorporate macroeconomic indicators for enhanced predictions.
+- **Broader Applicability:** Test the model on other currency pairs.
+- **Model Optimization:** Experiment with different architectures and hyperparameters.
+
+---
+
+## License
+
+Specify your license here (e.g., MIT, Apache, etc.).
+
+---
+
+## Additional Information
+
+### LSTM Model Architecture
+
+Layer (type) Output Shape Param #
+lstm (LSTM) (None, 70, 50) 10400
+lstm_1 (LSTM) (None, 50) 20200
+dense (Dense) (None, 1) 51
+Total params: 30,651
+Trainable params: 30,651
+Non-trainable params: 0
+
+### Training Process
+
+- **Early Stopping:** Implemented to prevent overfitting.
+- **Optimizer:** Adam.
+- **Loss Function:** Mean Squared Error (MSE).
+- **Batch Size:** 32.
+- **Epochs:** Up to 100, or until early stopping.
+
+### Data Analysis Insights
+
+- **Price Distribution:** Roughly normal, with most prices between 72 and 76.
+- **Trend:** General upward trend over time.
+- **Correlation:** Strong positive correlation among all price categories.
+
+---
+
+## Visual Examples
+
+### ARIMA Prediction Plot
+
+![ARIMA Prediction Plot](arima_tp.png)
+
+### LSTM Prediction Plot
+
+(Example plot from the notebook, showing actual vs. predicted prices.)
+
+---
+
+## Contact
+
+For questions or contributions, please contact the team members listed above.
+
